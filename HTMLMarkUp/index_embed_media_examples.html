@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Video Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style_embed.css">
+    </head>
+    <body>
+        <!-- Embedd Video -->
+        <video 
+        src="mov_bbb.mp4" 
+        width="640" 
+        height="480" 
+        poster="myVideoPoster.png" 
+        controls 
+        muted 
+        no-autoplay
+        preload="auto"
+        loop>Test Video</video>
+        <!-- Alternatve Media Sources -->
+        <video
+            width="640" 
+            height="480" 
+            poster="myVideoPoster.png" 
+            controls 
+            muted 
+            no-autoplay
+            preload="auto"
+            loop>
+            <source src="./myVideo.mp3" type="video/mp3">
+            <source src="./mov_bbb.mp4" type="video/mp4">
+            <p>
+                <b>Download Video:</b>
+                MP4 Format:
+                <a href="./mov_bbb.mp4">"MP4"</a>
+            </p>
+        </video>
+                <!-- Responsive added max-width and height to CSS -->
+                <video class="resp_vid"
+                src="mov_bbb.mp4" 
+                poster="myVideoPoster.png" 
+                controls 
+                muted 
+                no-autoplay
+                preload="auto"
+                loop>Test Video</video>
+    </body>
+</html>
