@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dialogues and Modeals</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            dialog {
+                border-radius: 10px;
+            }
+            dialog::backdrop {
+                animation: fade 0.5s ease forwards;
+            }
+            button {
+                height: 40px;
+                padding: 5px 10px;
+            }
+            button:focus {
+                outline: 2px solid #f90;
+            }
+            @keyframes fade {
+                0% {
+                    background-color: transparent;
+                }
+                100% {
+                    background-color: rgb(0 57 24 /0.6);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <button id="launchDialog" type="button">Where is the Dialogue?</button>
+        <p id="formResult"></p>
+        <dialog id="dialogEle">
+            <form method="dialog">
+                <h1>How about this? A native Dialogue</h1>
+                <p>Sp only think left is to dismiss me</p>
+                <button value="Dismissed!">Dismiss Dialogue</button>
+            </form>
+        </dialog>
+        <script>
+            const dialogEle = document.getElementById("dialogueEle");
+            const launchBtn = document.getElementById("launchDialog");
+            const formResult = document.getElementById("formResult");
+            launchBtn.addEventListener("click", () => dialogEle.showModal());
+            dialogEle.addEventListener("close", () => {
+                formResult.textContent = dialogEle.returnValue;
+            })
+        </script>
+    </body>
+</html>
