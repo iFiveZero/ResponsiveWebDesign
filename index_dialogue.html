@@ -33,23 +33,31 @@
         </style>
     </head>
     <body>
-        <button id="launchDialog" type="button">Where is the Dialogue?</button>
-        <p id="formResult"></p>
+        <p>
+            <button id="launchDialog">Where is the Dialogue?</button>
+        </p>
         <dialog id="dialogEle">
+        <p id="formResult">
             <form method="dialog">
                 <h1>How about this? A native Dialogue</h1>
-                <p>Sp only think left is to dismiss me</p>
+                <p>The only think left is to dismiss me</p>
                 <button value="Dismissed!">Dismiss Dialogue</button>
             </form>
+        </p>
         </dialog>
         <script>
-            const dialogEle = document.getElementById("dialogueEle");
             const launchBtn = document.getElementById("launchDialog");
+            //console.log(launchBtn);
+            const dialogEle = document.getElementById("dialogEle");
+            //console.log(dialogEle);
             const formResult = document.getElementById("formResult");
+            //console.log(formResult);
             launchBtn.addEventListener("click", () => dialogEle.showModal());
             dialogEle.addEventListener("close", () => {
-                formResult.textContent = dialogEle.returnValue;
-            })
+                formResult.textContent = dialogEle.returnValue
+                //console.log(dialogEle.returnValue);
+                console.log(dialogEle.returnValue);
+            });            
         </script>
     </body>
 </html>
