@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Inter var experimental;
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: oblique 0deg 10deg;
+    src: url(fonts/Inter.var.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/Inter-Regular.woff2) format("woff2"),url(fonts/Inter-Regular.woff) format("woff")
+}
+
+:root {
+    --grad: linear-gradient(63deg,#262626 23%,transparent 0) 7px 0,linear-gradient(63deg,transparent 73%,#262626 76%),linear-gradient(63deg,transparent 34%,#262626 38%,#262626 58%,transparent 62%),#222
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    background-color: #fff
+}
+
+*,:after,:before {
+    box-sizing: inherit
+}
+
+:focus {
+    outline: 1px dashed #b50404
+}
+
+a {
+    text-decoration: none
+}
+
+body,h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400
+}
+
+img,svg {
+    display: block
+}
+
+img {
+    max-width: 100%
+}
+
+[id] {
+    scroll-margin-top: 40px
+}
+
+body {
+    font-family: Inter,sans-serif;
+    border-top: 5px solid #b50404;
+    border-bottom: 5px solid #b50404;
+    background-image: url(../img/triangle_bg.png);
+    background-color: #fff
+}
+
+
+.rwd-MastHead {
+    display: flex;
+    flex-direction: column;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+.rwd-Logo_Main {
+    font-family: Oswald,sans-serif;
+    font-size: 46px;
+    margin-top: 10px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .3s
+}
+
+.rwd-Logo_Secondary {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform .3s;
+    display: flex;
+    align-items: center
+}
+
+.rwd-Nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+.rwd-Logo {
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative
+}
+
+.rwd-Nav_Link {
+    margin: 0;
+    padding: 0 10px;
+    font-family: Oswald,sans-serif; 
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #4a4a4a;
+    display: inline-flex;
+    min-height: 45px;
+    align-items: center;
+    border: 0;
+    background: none;
+    transition: all .3s;    
+}
+
+header {
+    border: solid red 2px;
+}
+
+
+/* Media Query */
+@media (min-width: 800px) {
+    .rwd-MastHead {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 30px auto;
+        }
+    }
