@@ -2,81 +2,144 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Responsive Web Design by Ben Frain</title>
         <meta name="description" content="A website for the book, Responsive Web Design with HTML and CSS, by Ben Frain">
+        <link rel="stylesheet" href="./css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Oswald:500&amp;display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
+
+        <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+        >
+        <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+        >
+
+        <link rel="shortcut icon" href="/favicon.ico">
+        <meta name="theme-color" content="#ffffff">
+
     </head>
     <body>
         <svg
-        display="none"
-        width="0"
-        height="0"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-    >
-        <defs>
-            <symbol id="star" viewbox="0 0 44 43">
-                <path
-                    d="M43.844 16.19l-15.148-2.237L21.922 0l-6.774 13.953L0 16.19l10.961 10.86-2.588 15.336 13.549-7.24 13.548 7.24-2.587-15.335z"
-                    fill="#F5C443"
-                    fill-rule="nonzero"
-                />
-            </symbol>
-            <symbol id="right-arrow" viewBox="0 0 39 10">
-                <path
-                    d="M29.507 5.418L.501 5.141l.01-1 29.006.277.038-4 8.956 4.586-9.042 4.414.038-4z"
-                    fill-rule="nonzero"
-                />
-            </symbol>
-            <symbol id="left-arrow" viewBox="0 0 39 10">
-                <path
-                    d="M9.51 4.227l29.006.277-.01 1-29.005-.277-.038 4L.506 4.641 9.549.227l-.039 4z"
-                    fill-rule="nonzero"
-                />
-            </symbol>
-            <symbol id="pages" viewBox="0 0 36 41">
-                <g fill="#B50404" fill-rule="nonzero">
+            display="none"
+            width="0"
+            height="0"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+            <defs>
+                <symbol id="star" viewbox="0 0 44 43">
                     <path
-                        d="M34.297 14.204c-.897-1.217-2.146-2.64-3.519-4.006-1.373-1.366-2.802-2.61-4.025-3.503C24.672 5.175 23.662 5 23.083 5H8.23A3.225 3.225 0 005 8.214v29.572A3.225 3.225 0 008.23 41h24.54c1.781 0 3.23-1.442 3.23-3.214V17.857c0-.576-.176-1.58-1.703-3.653zm-5.346-2.188c1.24 1.234 2.212 2.347 2.93 3.27h-6.214V9.1c.927.715 2.045 1.683 3.284 2.916zm4.466 25.77a.653.653 0 01-.646.643H8.229a.653.653 0 01-.646-.643V8.214c0-.348.296-.643.646-.643h14.854v9c0 .71.579 1.286 1.292 1.286h9.042v19.929z"
+                        d="M43.844 16.19l-15.148-2.237L21.922 0l-6.774 13.953L0 16.19l10.961 10.86-2.588 15.336 13.549-7.24 13.548 7.24-2.587-15.335z"
+                        fill="#F5C443"
+                        fill-rule="nonzero"
                     />
+                </symbol>
+                <symbol id="right-arrow" viewBox="0 0 39 10">
                     <path
-                        d="M21.866 1.698C19.773.176 18.758 0 18.176 0H3.247C1.456 0 0 1.445 0 3.22v29.625C0 34.4 1.117 35.7 2.597 36V3.22c0-.349.297-.644.649-.644H23a26.474 26.474 0 00-1.134-.878z"
+                        d="M29.507 5.418L.501 5.141l.01-1 29.006.277.038-4 8.956 4.586-9.042 4.414.038-4z"
+                        fill-rule="nonzero"
                     />
-                </g>
-            </symbol>
-            <symbol id="code" viewBox="0 0 69 41">
-                <g fill="#B50404" fill-rule="nonzero">
+                </symbol>
+                <symbol id="left-arrow" viewBox="0 0 39 10">
                     <path
-                        d="M45 33.6l5.538 5.4L69 21 50.538 3 45 8.4 57.923 21zM24 8.4L18.462 3 0 21l18.462 18L24 33.6 11.077 21zM38.015 0L42 1.074 30.985 41 27 39.926 38.015 0z"
+                        d="M9.51 4.227l29.006.277-.01 1-29.005-.277-.038 4L.506 4.641 9.549.227l-.039 4z"
+                        fill-rule="nonzero"
                     />
-                </g>
-            </symbol>
-            <symbol id="3rd" viewBox="0 0 57 39">
-                <g fill="#B50404" fill-rule="nonzero">
-                    <path
-                        d="M13.773 38.497C4.877 38.497-.61 33.703.563 26.92h9.8c-.408 2.113 1.403 3.623 3.978 3.623 3.054 0 5.398-2.131 5.753-4.333.373-2.255-1.687-3.267-4.688-3.267H11.5l1.136-6.818h3.48c3.019 0 5.487-1.811 5.895-4.261.32-1.882-.763-3.125-3.267-3.125-2.734 0-5.433 1.562-5.753 3.764H3.616c1.101-6.659 7.67-11.364 15.625-11.364 8.292 0 13.193 5.114 12.216 11.08-.71 4.279-4.083 6.41-8.806 6.818v.284c5.149.604 8.291 4.084 7.528 8.736-.977 5.966-7.813 10.44-16.406 10.44zM36.298 15l1.818-10.91h2.934l-.32 1.904h.114c.625-1.35 1.747-2.06 2.968-2.06.306 0 .668.036.93.1l-.454 2.692c-.262-.092-.824-.163-1.257-.163-1.32 0-2.45.923-2.692 2.265L39.324 15h-3.026zm11.69.178c-2.5 0-4.104-1.968-3.5-5.618.617-3.75 2.947-5.611 5.347-5.611 1.826 0 2.522 1.087 2.77 1.974h.092l.91-5.468h3.025L54.217 15h-2.983l.292-1.747h-.128c-.576.909-1.655 1.925-3.41 1.925zm1.329-2.408c1.456 0 2.528-1.279 2.848-3.225.32-1.946-.32-3.188-1.79-3.188-1.499 0-2.486 1.3-2.791 3.188-.32 1.904.241 3.225 1.733 3.225z"
-                    />
-                </g>
-            </symbol>
-        </defs>
-    </svg>
+                </symbol>
+                <symbol id="pages" viewBox="0 0 36 41">
+                    <g fill="#B50404" fill-rule="nonzero">
+                        <path
+                            d="M34.297 14.204c-.897-1.217-2.146-2.64-3.519-4.006-1.373-1.366-2.802-2.61-4.025-3.503C24.672 5.175 23.662 5 23.083 5H8.23A3.225 3.225 0 005 8.214v29.572A3.225 3.225 0 008.23 41h24.54c1.781 0 3.23-1.442 3.23-3.214V17.857c0-.576-.176-1.58-1.703-3.653zm-5.346-2.188c1.24 1.234 2.212 2.347 2.93 3.27h-6.214V9.1c.927.715 2.045 1.683 3.284 2.916zm4.466 25.77a.653.653 0 01-.646.643H8.229a.653.653 0 01-.646-.643V8.214c0-.348.296-.643.646-.643h14.854v9c0 .71.579 1.286 1.292 1.286h9.042v19.929z"
+                        />
+                        <path
+                            d="M21.866 1.698C19.773.176 18.758 0 18.176 0H3.247C1.456 0 0 1.445 0 3.22v29.625C0 34.4 1.117 35.7 2.597 36V3.22c0-.349.297-.644.649-.644H23a26.474 26.474 0 00-1.134-.878z"
+                        />
+                    </g>
+                </symbol>
+                <symbol id="code" viewBox="0 0 69 41">
+                    <g fill="#B50404" fill-rule="nonzero">
+                        <path
+                            d="M45 33.6l5.538 5.4L69 21 50.538 3 45 8.4 57.923 21zM24 8.4L18.462 3 0 21l18.462 18L24 33.6 11.077 21zM38.015 0L42 1.074 30.985 41 27 39.926 38.015 0z"
+                        />
+                    </g>
+                </symbol>
+                <symbol id="3rd" viewBox="0 0 57 39">
+                    <g fill="#B50404" fill-rule="nonzero">
+                        <path
+                            d="M13.773 38.497C4.877 38.497-.61 33.703.563 26.92h9.8c-.408 2.113 1.403 3.623 3.978 3.623 3.054 0 5.398-2.131 5.753-4.333.373-2.255-1.687-3.267-4.688-3.267H11.5l1.136-6.818h3.48c3.019 0 5.487-1.811 5.895-4.261.32-1.882-.763-3.125-3.267-3.125-2.734 0-5.433 1.562-5.753 3.764H3.616c1.101-6.659 7.67-11.364 15.625-11.364 8.292 0 13.193 5.114 12.216 11.08-.71 4.279-4.083 6.41-8.806 6.818v.284c5.149.604 8.291 4.084 7.528 8.736-.977 5.966-7.813 10.44-16.406 10.44zM36.298 15l1.818-10.91h2.934l-.32 1.904h.114c.625-1.35 1.747-2.06 2.968-2.06.306 0 .668.036.93.1l-.454 2.692c-.262-.092-.824-.163-1.257-.163-1.32 0-2.45.923-2.692 2.265L39.324 15h-3.026zm11.69.178c-2.5 0-4.104-1.968-3.5-5.618.617-3.75 2.947-5.611 5.347-5.611 1.826 0 2.522 1.087 2.77 1.974h.092l.91-5.468h3.025L54.217 15h-2.983l.292-1.747h-.128c-.576.909-1.655 1.925-3.41 1.925zm1.329-2.408c1.456 0 2.528-1.279 2.848-3.225.32-1.946-.32-3.188-1.79-3.188-1.499 0-2.486 1.3-2.791 3.188-.32 1.904.241 3.225 1.733 3.225z"
+                        />
+                    </g>
+                </symbol>
+            </defs>
+        </svg>
         <header class="rwd-MastHead">
-            <a href="/" class="rwd-logo">
-                <span class="rwd-Logo-Main">RWD</span>
-                <span class="rwd-Logo-Secondary">Education</span>
-            </a> |
+            <a href="/" class="rwd-Logo">
+                <span class="rwd-Logo_Main">RWD</span>
+                <span class="rwd-Logo_Secondary">Education</span>
+            </a>
             <nav class="rwd-Nav">
-                <a class="rwd-Nav_Link" href="#about">About</a> |
-                <a class="rwd-Nav_Link" href="#reviews">Reviews</a> |
+                <a class="rwd-Nav_Link" href="#about">About</a>
+                <a class="rwd-Nav_Link" href="#reviews">Reviews</a>
                 <a class="rwd-Nav_Link" href="#chapter">Chapter List</a>
                 <a class="rwd-Nav_Link" href="#buy">Buy</a>
-                <a class="rwd-Nav_Link" href="#code">Code</a>
+                <button type="button" class="rwd-Nav_Link" aria-controls="downloadPanel">Code</button>
+                <div id="downloadPanelClickMask" class="rwd-DownloadPanel_Mask" aria-hidden="true">
+                    <p class="rwd-DownloadPanel_Title">
+                        <svg class="rwd-DownloadPanel_SVG">
+                            <use xlink:href="#code"></use>
+                        </svg>
+                        Download Code
+                    </p>
+                    <div class="rwd-DownloadPanel_Links">
+                        <a href="https://google.com" class="rwd-DownloadPanel_Link">2nd Edition</a>
+                        <a href="https://bing.com" class="rwd-DownloadPanel_Link">3rd Edition</a>
+                    </div>
+                </div>
             </nav>
         </header>
+        <main>
+            <section>
+                <!-- Hero Book Cover Section -->
+            </section>
+            <section>
+                <!-- About Section -->
+            </section>
+            <div>
+                <!-- Buy -->
+            </div>
+            <section>
+                <!-- Reviews-->
+            </section>
+            <section>
+                <!-- New -->
+            </section>
+            <section>
+                <!-- Mailing -->
+            </section>
+            <section>
+                <!-- Chapters -->
+            </section>
+            <footer>
+                <!-- Footer -->
+                <section>
+                    <!-- Footer Block -->
+                </section>
+                <section>
+                    <!-- Footer Links -->
+                </section>
+                <section>
+                    <!-- Footer Contetn-->
+                </section>
+            </footer>
+        </main>
         <script src="./app/app.js" async defer></script>
     </body>
 </html>
