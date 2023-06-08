@@ -65,160 +65,17 @@ body {
     background-image: url(../img/triangle_bg.png);
     background-color: #fff
 }
-/* Header Styling */
-/* Delete For Production */
-header {
-    border: solid red 2px;
-}
-
-.rwd-MastHead {
-    display: flex;
-    flex-direction: column;
-}
 
 *, :after, :before {
     box-sizing: inherit;
 }
-
-.rwd-Logo_Main {
-    font-family: Oswald,sans-serif;
-    font-size: 46px;
-    margin-top: 10px;
-    line-height: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform .3s
-}
-
-.rwd-Logo_Secondary {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: transform .3s;
-    display: flex;
-    align-items: center
-}
-
-.rwd-Nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-}
-
-.rwd-Logo {
-    color: #4a4a4a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative
-}
-
-.rwd-Nav_Link {
-    margin: 0;
-    padding: 0 10px;
-    font-family: Oswald,sans-serif; 
-    text-transform: uppercase;
-    font-size: 18px;
-    color: #4a4a4a;
-    display: inline-flex;
-    min-height: 45px;
-    align-items: center;
-    border: 0;
-    background: none;
-    transition: all .3s;    
-}
-
-/* Header Media Query */
-@media (min-width: 800px) {
-    .rwd-MastHead {
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 1000px;
-        margin: 30px auto;
-        }
-    }
-
-/* cut and paste */
+/* Header Styling Start */
+/* Delete For Production */
 /*
-@font-face {
-    font-family: Inter var experimental;
-    font-weight: 100 900;
-    font-display: swap;
-    font-style: oblique 0deg 10deg;
-    src: url(fonts/Inter.var.woff2) format("woff2")
+header {
+    border: solid red 2px;
 }
-
-@font-face {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(fonts/Inter-Regular.woff2) format("woff2"),url(fonts/Inter-Regular.woff) format("woff")
-}
-
-:root {
-    --grad: linear-gradient(63deg,#262626 23%,transparent 0) 7px 0,linear-gradient(63deg,transparent 73%,#262626 76%),linear-gradient(63deg,transparent 34%,#262626 38%,#262626 58%,transparent 62%),#222
-}
-
-html {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    scroll-behavior: smooth;
-    background-color: #fff
-}
-
-*,:after,:before {
-    box-sizing: inherit
-}
-
-:focus {
-    outline: 1px dashed #b50404
-}
-
-a {
-    text-decoration: none
-}
-
-body,h1,h2,h3,h4,h5,h6,p {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 400
-}
-
-img,svg {
-    display: block
-}
-
-img {
-    max-width: 100%
-}
-
-[id] {
-    scroll-margin-top: 40px
-}
-
-@media (min-width: 1000px) {
-    [id] {
-        scroll-margin-top:70px
-    }
-}
-
-body {
-    font-family: Inter,sans-serif;
-    border-top: 5px solid #b50404;
-    border-bottom: 5px solid #b50404;
-    background-image: url(img/triangle_bg.png);
-    background-color: #fff
-}
-
-@supports (font-variation-settings: "wdth" 115) {
-    body {
-        font-family:Inter var experimental
-    }
-}
-
+*/
 .rwd-MastHead {
     display: flex;
     flex-direction: column
@@ -233,26 +90,7 @@ body {
     }
 }
 
-.rwd-Logo {
-    color: #4a4a4a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative
-}
 
-@media (min-width: 800px) {
-    .rwd-Logo {
-        margin-left:20px;
-        align-items: flex-end
-    }
-}
-
-@media (min-width: 1000px) {
-    .rwd-Logo {
-        margin:0
-    }
-}
 
 .rwd-Logo_Main {
     font-family: Oswald,sans-serif;
@@ -346,6 +184,27 @@ body {
     }
 }
 
+.rwd-Logo {
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative
+}
+
+@media (min-width: 800px) {
+    .rwd-Logo {
+        margin-left:20px;
+        align-items: flex-end
+    }
+}
+
+@media (min-width: 1000px) {
+    .rwd-Logo {
+        margin:0
+    }
+}
+
 .rwd-Nav_Link {
     margin: 0;
     padding: 0 10px;
@@ -365,6 +224,153 @@ body {
     border-radius: 19px;
     background-color: rgba(0,0,0,.1)
 }
+
+.rwd-DownloadPanel_Mask {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.3);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .3s
+}
+
+.rwd-DownloadPanel_Mask[data-active=true] {
+    opacity: 1;
+    pointer-events: auto
+}
+
+.rwd-DownloadPanel_Title {
+    font-family: Oswald,sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center
+}
+
+.rwd-DownloadPanel_SVG {
+    width: 27px;
+    height: 16px;
+    margin-right: 10px
+}
+
+.rwd-DownloadPanel_Links {
+    display: flex
+}
+
+.rwd-DownloadPanel_Link {
+    font-size: 15px;
+    color: #191919;
+    padding: 0 10px;
+    text-underline-offset: 3px;
+    -webkit-text-decoration: underline #b50404;
+    text-decoration: underline #b50404;
+    transition: all .3s
+}
+
+.rwd-DownloadPanel_Link+.rwd-DownloadPanel_Link {
+    border-left: 1px solid #888
+}
+
+.rwd-DownloadPanel_Link:hover {
+    color: #b50404
+}
+
+/* Header Styling End */
+/* Header Media Query */
+
+
+/* cut and paste */
+/*
+@font-face {
+    font-family: Inter var experimental;
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: oblique 0deg 10deg;
+    src: url(fonts/Inter.var.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/Inter-Regular.woff2) format("woff2"),url(fonts/Inter-Regular.woff) format("woff")
+}
+
+:root {
+    --grad: linear-gradient(63deg,#262626 23%,transparent 0) 7px 0,linear-gradient(63deg,transparent 73%,#262626 76%),linear-gradient(63deg,transparent 34%,#262626 38%,#262626 58%,transparent 62%),#222
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    background-color: #fff
+}
+
+*,:after,:before {
+    box-sizing: inherit
+}
+
+:focus {
+    outline: 1px dashed #b50404
+}
+
+a {
+    text-decoration: none
+}
+
+body,h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400
+}
+
+img,svg {
+    display: block
+}
+
+img {
+    max-width: 100%
+}
+
+[id] {
+    scroll-margin-top: 40px
+}
+
+@media (min-width: 1000px) {
+    [id] {
+        scroll-margin-top:70px
+    }
+}
+
+body {
+    font-family: Inter,sans-serif;
+    border-top: 5px solid #b50404;
+    border-bottom: 5px solid #b50404;
+    background-image: url(img/triangle_bg.png);
+    background-color: #fff
+}
+
+@supports (font-variation-settings: "wdth" 115) {
+    body {
+        font-family:Inter var experimental
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .rwd-DownloadPanel {
     position: fixed;
@@ -425,58 +431,15 @@ body {
     }
 }
 
-.rwd-DownloadPanel_Title {
-    font-family: Oswald,sans-serif;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center
-}
 
-.rwd-DownloadPanel_SVG {
-    width: 27px;
-    height: 16px;
-    margin-right: 10px
-}
 
-.rwd-DownloadPanel_Links {
-    display: flex
-}
 
-.rwd-DownloadPanel_Link {
-    font-size: 15px;
-    color: #191919;
-    padding: 0 10px;
-    text-underline-offset: 3px;
-    -webkit-text-decoration: underline #b50404;
-    text-decoration: underline #b50404;
-    transition: all .3s
-}
 
-.rwd-DownloadPanel_Link+.rwd-DownloadPanel_Link {
-    border-left: 1px solid #888
-}
 
-.rwd-DownloadPanel_Link:hover {
-    color: #b50404
-}
 
-.rwd-DownloadPanel_Mask {
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0,0,0,.3);
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity .3s
-}
 
-.rwd-DownloadPanel_Mask[data-active=true] {
-    opacity: 1;
-    pointer-events: auto
-}
+
+
 
 .rwd-Hero_Cover {
     width: 150px;
