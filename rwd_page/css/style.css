@@ -886,6 +886,153 @@ header {
 
 /* Reviews Section End */
 
+/* NEw Section Start */
+.rwd-New {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 20px 2rem;
+    -webkit-clip-path: (0 6%,100% 0,100% 100%,0 100%);
+    clip-path: (0 6%,100% 0,100% 100%,0 100%);
+    background-color: #f9f9f9;
+    margin-top: -3rem
+}
+
+@media (min-width: 1000px) {
+    .rwd-New {
+        display:grid;
+        padding: 6rem 0 3rem;
+        grid-template-columns: calc(50vw - 500px) repeat(6,1fr) calc(50vw - 500px);
+        grid-template-rows: 50px auto auto auto auto
+    }
+}
+
+.rwd-New_Headline {
+    font-family: Oswald,sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase
+}
+
+@media (min-width: 1000px) {
+    .rwd-New_Headline {
+        grid-column:2/span 3;
+        grid-row: 1;
+        font-size: 1.8rem;
+        align-items: center;
+        margin-bottom: 20px
+    }
+}
+
+.rwd-New_Headline:before {
+    content: "";
+    width: 0;
+    height: 0;
+    margin-right: .4em;
+    border-color: transparent transparent #b50404;
+    border-style: solid;
+    border-width: 0 .5em 1em
+}
+
+@media (min-width: 1000px) {
+    .rwd-New_IntroText {
+        grid-column:2/span 3;
+        grid-row: 2;
+        margin-right: 20px
+    }
+}
+
+.rwd-New_Intro {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-top: 10px
+}
+
+@media (min-width: 1000px) {
+    .rwd-New_Intro {
+        font-size:1.1rem
+    }
+}
+
+@media (min-width: 1000px) {
+    .rwd-New_Bullets {
+        grid-column:2/span 3;
+        grid-row: 3;
+        padding: 0;
+        line-height: 1.6;
+        font-size: 1.1rem
+    }
+}
+
+.rwd-New_Bullet {
+    list-style-image: url(img/triangleRed.svg)
+}
+
+.rwd-New_Media {
+    display: block;
+    overflow: hidden
+}
+
+@media (min-width: 1000px) {
+    .rwd-New_Media {
+        grid-column:span 3/-2;
+        grid-row: 1/-1;
+        place-self: center
+    }
+}
+
+.rwd-New_Images {
+    white-space: nowrap;
+    padding: 0;
+    transition: .4s ease-in-out;
+    transform: translateX(var(--Dist));
+    display: block;
+    margin-bottom: 30px
+}
+
+.rwd-New_Img {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0 auto
+}
+
+.rwd-New_ActionBtn {
+    display: inline-flex;
+    align-items: center;
+    font-size: .8rem;
+    color: #333;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 0;
+    transition: opacity .4s
+}
+
+[disabled].rwd-New_ActionBtn {
+    opacity: .5
+}
+
+.rwd-New_ActionBtn:hover:not([disabled]) .rwd-New_ActionSVG {
+    transform: translateX(-10px)
+}
+
+.rwd-New_ActionBtn:last-of-type:hover:not([disabled]) .rwd-New_ActionSVG {
+    transform: translateX(10px)
+}
+
+.rwd-New_ActionBtn:last-of-type {
+    float: right
+}
+
+.rwd-New_ActionSVG {
+    height: 10px;
+    margin: 0 5px;
+    width: 39px;
+    fill: #333;
+    transition: transform .3s
+}
+
+/* New Section End */
+
 /* cut and paste */
 /*
 @font-face {
@@ -1035,50 +1182,6 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .rwd-About_Skip {
     color: #b50404;
     font-size: 1rem;
@@ -1087,21 +1190,6 @@ body {
     line-height: 22px;
     margin: 20px 0
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 blockquote {
@@ -1133,149 +1221,6 @@ blockquote {
 
 
 
-.rwd-New {
-    display: flex;
-    flex-direction: column;
-    padding: 6rem 20px 2rem;
-    -webkit-clip-path: (0 6%,100% 0,100% 100%,0 100%);
-    clip-path: (0 6%,100% 0,100% 100%,0 100%);
-    background-color: #f9f9f9;
-    margin-top: -3rem
-}
-
-@media (min-width: 1000px) {
-    .rwd-New {
-        display:grid;
-        padding: 6rem 0 3rem;
-        grid-template-columns: calc(50vw - 500px) repeat(6,1fr) calc(50vw - 500px);
-        grid-template-rows: 50px auto auto auto auto
-    }
-}
-
-.rwd-New_Headline {
-    font-family: Oswald,sans-serif;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase
-}
-
-@media (min-width: 1000px) {
-    .rwd-New_Headline {
-        grid-column:2/span 3;
-        grid-row: 1;
-        font-size: 1.8rem;
-        align-items: center;
-        margin-bottom: 20px
-    }
-}
-
-.rwd-New_Headline:before {
-    content: "";
-    width: 0;
-    height: 0;
-    margin-right: .4em;
-    border-color: transparent transparent #b50404;
-    border-style: solid;
-    border-width: 0 .5em 1em
-}
-
-@media (min-width: 1000px) {
-    .rwd-New_IntroText {
-        grid-column:2/span 3;
-        grid-row: 2;
-        margin-right: 20px
-    }
-}
-
-.rwd-New_Intro {
-    font-size: 1rem;
-    line-height: 1.6rem;
-    margin-top: 10px
-}
-
-@media (min-width: 1000px) {
-    .rwd-New_Intro {
-        font-size:1.1rem
-    }
-}
-
-@media (min-width: 1000px) {
-    .rwd-New_Bullets {
-        grid-column:2/span 3;
-        grid-row: 3;
-        padding: 0;
-        line-height: 1.6;
-        font-size: 1.1rem
-    }
-}
-
-.rwd-New_Media {
-    display: block;
-    overflow: hidden
-}
-
-@media (min-width: 1000px) {
-    .rwd-New_Media {
-        grid-column:span 3/-2;
-        grid-row: 1/-1;
-        place-self: center
-    }
-}
-
-.rwd-New_Images {
-    white-space: nowrap;
-    padding: 0;
-    transition: .4s ease-in-out;
-    transform: translateX(var(--Dist));
-    display: block;
-    margin-bottom: 30px
-}
-
-.rwd-New_Img {
-    display: inline-block;
-    max-width: 100%;
-    margin: 0 auto
-}
-
-.rwd-New_Bullet {
-    list-style-image: url(img/triangleRed.svg)
-}
-
-.rwd-New_ActionBtn {
-    display: inline-flex;
-    align-items: center;
-    font-size: .8rem;
-    color: #333;
-    -webkit-appearance: none;
-    background-color: transparent;
-    border: 0;
-    transition: opacity .4s
-}
-
-[disabled].rwd-New_ActionBtn {
-    opacity: .5
-}
-
-.rwd-New_ActionSVG {
-    height: 10px;
-    margin: 0 5px;
-    width: 39px;
-    fill: #333;
-    transition: transform .3s
-}
-
-.rwd-New_ActionBtn:hover:not([disabled]) .rwd-New_ActionSVG {
-    transform: translateX(-10px)
-}
-
-.rwd-New_ActionBtn:last-of-type:hover:not([disabled]) .rwd-New_ActionSVG {
-    transform: translateX(10px)
-}
-
-.rwd-New_ActionBtn:last-of-type {
-    float: right
-}
 
 .rwd-Mailing {
     padding: 20px;
