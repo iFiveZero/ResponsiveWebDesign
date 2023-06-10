@@ -727,6 +727,163 @@ header {
     }
 }
 
+.rwd-Reviews_Headline {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Oswald,sans-serif;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center
+}
+
+@media (min-width: 1000px) {
+    .rwd-Reviews_Headline {
+        grid-column:2/span 3;
+        font-size: 1.8rem
+    }
+}
+
+.rwd-Reviews_Headline:before {
+    content: "";
+    width: 0;
+    height: 0;
+    margin-right: .4em;
+    border-color: transparent transparent #b50404;
+    border-style: solid;
+    border-width: 0 .5em 1em
+}
+
+.rwd-Reviews_Container {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+@media (min-width: 1000px) {
+    .rwd-Reviews_Container {
+        grid-column:2/8;
+        grid-row: 2
+    }
+}
+
+.rwd-Reviews_Container::-webkit-scrollbar {
+    display: none
+}
+
+.rwd-Reviews_Inner {
+    transition: transform .4s ease-in-out;
+    transform: translateX(var(--Dist));
+    padding: 0;
+    white-space: nowrap
+}
+
+.rwd-Review {
+    color: #fff;
+    font-family: Georgia,Times New Roman,Times,serif;
+    padding: 0;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle
+}
+
+.rwd-Review a {
+    color: #fff;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip: ink;
+    -webkit-text-decoration-color: #b50404;
+    text-decoration-color: #b50404;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px
+}
+
+.rwd-Review p {
+    margin: 10px
+}
+
+@media (min-width: 800px) {
+    .rwd-Review p {
+        text-align:center;
+        font-size: calc(1rem + 1vw)
+    }
+}
+
+.rwd-Review_Stars {
+    margin-top: 10px;
+    display: flex
+}
+
+@media (min-width: 800px) {
+    .rwd-Review_Stars {
+        justify-content:center
+    }
+}
+
+.rwd-Review_Star {
+    height: 20px;
+    width: 20px
+}
+
+@media (min-width: 800px) {
+    .rwd-Review_Star {
+        width:calc(20px + 1vw);
+        height: calc(20px + 1vw)
+    }
+}
+
+.rwd-Review_QuoteActionBtn {
+    display: inline-flex;
+    align-items: center;
+    font-size: .8rem;
+    color: #fff;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 0;
+    transition: opacity .4s
+}
+
+[disabled].rwd-Review_QuoteActionBtn {
+    opacity: .5
+}
+
+.rwd-Review_QuoteActionBtn:hover:not([disabled]) .rwd-Review_QuoteActionSVG {
+    transform: translateX(-10px)
+}
+
+.rwd-Review_QuoteActionBtn:last-of-type:hover:not([disabled]) .rwd-Review_QuoteActionSVG {
+    transform: translateX(10px)
+}
+
+.rwd-Review_QuoteActionBtn:last-of-type {
+    float: right
+}
+
+@media (min-width: 1000px) {
+    .rwd-Review_QuoteActionBtn {
+        grid-column:2/span 2;
+        grid-row: 3
+    }
+
+    .rwd-Review_QuoteActionBtn:last-of-type {
+        grid-column: 7;
+        float: none;
+        justify-self: end
+    }
+}
+
+.rwd-Review_QuoteActionSVG {
+    height: 10px;
+    margin: 0 5px;
+    width: 39px;
+    fill: #fff;
+    transition: transform .3s
+}
+
 /* Reviews Section End */
 
 /* cut and paste */
@@ -937,60 +1094,15 @@ body {
 
 
 
-.rwd-Reviews_Container {
-    width: 100%;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -ms-overflow-style: none;
-    scrollbar-width: none
-}
-
-@media (min-width: 1000px) {
-    .rwd-Reviews_Container {
-        grid-column:2/8;
-        grid-row: 2
-    }
-}
-
-.rwd-Reviews_Inner {
-    transition: transform .4s ease-in-out;
-    transform: translateX(var(--Dist));
-    padding: 0;
-    white-space: nowrap
-}
-
-.rwd-Reviews_Container::-webkit-scrollbar {
-    display: none
-}
 
 
 
-.rwd-Reviews_Headline {
-    color: #fff;
-    text-transform: uppercase;
-    font-family: Oswald,sans-serif;
-    font-size: 18px;
-    display: inline-flex;
-    align-items: center
-}
 
-@media (min-width: 1000px) {
-    .rwd-Reviews_Headline {
-        grid-column:2/span 3;
-        font-size: 1.8rem
-    }
-}
 
-.rwd-Reviews_Headline:before {
-    content: "";
-    width: 0;
-    height: 0;
-    margin-right: .4em;
-    border-color: transparent transparent #b50404;
-    border-style: solid;
-    border-width: 0 .5em 1em
-}
+
+
+
+
 
 blockquote {
     font-size: 16px;
@@ -1009,109 +1121,17 @@ blockquote {
     }
 }
 
-.rwd-Review_Stars {
-    margin-top: 10px;
-    display: flex
-}
 
-@media (min-width: 800px) {
-    .rwd-Review_Stars {
-        justify-content:center
-    }
-}
 
-.rwd-Review_Star {
-    height: 20px;
-    width: 20px
-}
 
-@media (min-width: 800px) {
-    .rwd-Review_Star {
-        width:calc(20px + 1vw);
-        height: calc(20px + 1vw)
-    }
-}
 
-.rwd-Review {
-    color: #fff;
-    font-family: Georgia,Times New Roman,Times,serif;
-    padding: 0;
-    width: 100%;
-    display: inline-flex;
-    flex-direction: column;
-    vertical-align: middle
-}
 
-.rwd-Review a {
-    color: #fff;
-    -webkit-text-decoration-line: underline;
-    text-decoration-line: underline;
-    -webkit-text-decoration-skip: ink;
-    text-decoration-skip: ink;
-    -webkit-text-decoration-color: #b50404;
-    text-decoration-color: #b50404;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 2px
-}
 
-.rwd-Review p {
-    margin: 10px
-}
 
-@media (min-width: 800px) {
-    .rwd-Review p {
-        text-align:center;
-        font-size: calc(1rem + 1vw)
-    }
-}
 
-.rwd-Review_QuoteActionBtn {
-    display: inline-flex;
-    align-items: center;
-    font-size: .8rem;
-    color: #fff;
-    -webkit-appearance: none;
-    background-color: transparent;
-    border: 0;
-    transition: opacity .4s
-}
 
-[disabled].rwd-Review_QuoteActionBtn {
-    opacity: .5
-}
 
-.rwd-Review_QuoteActionSVG {
-    height: 10px;
-    margin: 0 5px;
-    width: 39px;
-    fill: #fff;
-    transition: transform .3s
-}
 
-.rwd-Review_QuoteActionBtn:hover:not([disabled]) .rwd-Review_QuoteActionSVG {
-    transform: translateX(-10px)
-}
-
-.rwd-Review_QuoteActionBtn:last-of-type:hover:not([disabled]) .rwd-Review_QuoteActionSVG {
-    transform: translateX(10px)
-}
-
-.rwd-Review_QuoteActionBtn:last-of-type {
-    float: right
-}
-
-@media (min-width: 1000px) {
-    .rwd-Review_QuoteActionBtn {
-        grid-column:2/span 2;
-        grid-row: 3
-    }
-
-    .rwd-Review_QuoteActionBtn:last-of-type {
-        grid-column: 7;
-        float: none;
-        justify-self: end
-    }
-}
 
 .rwd-New {
     display: flex;
