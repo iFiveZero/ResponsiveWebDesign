@@ -622,7 +622,112 @@ header {
 
 /* About Section End */
 
+/* Buy Section Start */
+.rwd-Buy {
+    display: flex;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 10px 0;
+    margin: 10px 0;
+    justify-content: space-evenly
+}
 
+@media (min-width: 1000px) {
+    .rwd-Buy {
+        display:grid;
+        grid-template-columns: calc(50vw - 500px) repeat(5,1fr) calc(50vw - 500px);
+        grid-template-rows: 70px;
+        background-color: hsla(0,0%,100%,.25)
+    }
+}
+
+.rwd-Buy_Link {
+    border-radius: 25px;
+    padding: 5px 20px;
+    background-color: #089df4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Oswald,sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 3px solid transparent;
+    transition: border .3s
+}
+
+@media (min-width: 1000px) {
+    .rwd-Buy_Link {
+        font-size:1.8rem;
+        min-height: 65px;
+        grid-column: 2/span 2;
+        margin: 0 30px
+    }
+
+    .rwd-Buy_Link:nth-child(2) {
+        grid-column: 4/span 2
+    }
+}
+
+.rwd-Buy_Link:hover {
+    border-color: #067cc1
+}
+
+.rwd-TopBtn {
+    top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    transition: transform .3s
+}
+
+@media (min-width: 1000px) {
+    .rwd-TopBtn {
+        grid-column:6;
+        justify-self: center
+    }
+}
+
+.rwd-TopBtn:hover {
+    transform: translateY(-5px)
+}
+
+.rwd-TopBtn svg {
+    fill: #2196f3
+}
+
+@media (min-width: 1000px) {
+    .rwd-TopBtn svg {
+        width:60px;
+        height: 60px
+    }
+}
+
+
+/* Buy Secion End */
+
+/* Reviews Section Start */
+.rwd-Reviews {
+    padding: 3rem 1rem;
+    background-color: #222;
+    -webkit-clip-path: polygon(0 0,100% 6%,100% 94%,0 100%);
+    clip-path: polygon(0 0,100% 6%,100% 94%,0 100%)
+}
+
+@media (min-width: 1000px) {
+    .rwd-Reviews {
+        display:grid;
+        padding: 3rem 0;
+        grid-template-columns: calc(50vw - 500px) repeat(6,1fr) calc(50vw - 500px);
+        grid-template-rows: 50px auto 50px;
+        background: var(--grad);
+        background-size: 16px 48px
+    }
+}
+
+/* Reviews Section End */
 
 /* cut and paste */
 /*
@@ -828,58 +933,9 @@ body {
 
 
 
-.rwd-Buy {
-    display: flex;
-    align-items: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    padding: 10px 0;
-    margin: 10px 0;
-    justify-content: space-evenly
-}
 
-@media (min-width: 1000px) {
-    .rwd-Buy {
-        display:grid;
-        grid-template-columns: calc(50vw - 500px) repeat(5,1fr) calc(50vw - 500px);
-        grid-template-rows: 70px;
-        background-color: hsla(0,0%,100%,.25)
-    }
-}
 
-.rwd-Buy_Link {
-    border-radius: 25px;
-    padding: 5px 20px;
-    background-color: #089df4;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Oswald,sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #fff;
-    border: 3px solid transparent;
-    transition: border .3s
-}
 
-@media (min-width: 1000px) {
-    .rwd-Buy_Link {
-        font-size:1.8rem;
-        min-height: 65px;
-        grid-column: 2/span 2;
-        margin: 0 30px
-    }
-
-    .rwd-Buy_Link:nth-child(2) {
-        grid-column: 4/span 2
-    }
-}
-
-.rwd-Buy_Link:hover {
-    border-color: #067cc1
-}
 
 .rwd-Reviews_Container {
     width: 100%;
@@ -908,23 +964,7 @@ body {
     display: none
 }
 
-.rwd-Reviews {
-    padding: 3rem 1rem;
-    background-color: #222;
-    -webkit-clip-path: polygon(0 0,100% 6%,100% 94%,0 100%);
-    clip-path: polygon(0 0,100% 6%,100% 94%,0 100%)
-}
 
-@media (min-width: 1000px) {
-    .rwd-Reviews {
-        display:grid;
-        padding: 3rem 0;
-        grid-template-columns: calc(50vw - 500px) repeat(6,1fr) calc(50vw - 500px);
-        grid-template-rows: 50px auto 50px;
-        background: var(--grad);
-        background-size: 16px 48px
-    }
-}
 
 .rwd-Reviews_Headline {
     color: #fff;
@@ -1539,33 +1579,6 @@ blockquote {
     }
 }
 
-.rwd-TopBtn {
-    top: 10px;
-    display: flex;
-    justify-content: flex-end;
-    transition: transform .3s
-}
 
-@media (min-width: 1000px) {
-    .rwd-TopBtn {
-        grid-column:6;
-        justify-self: center
-    }
-}
-
-.rwd-TopBtn:hover {
-    transform: translateY(-5px)
-}
-
-.rwd-TopBtn svg {
-    fill: #2196f3
-}
-
-@media (min-width: 1000px) {
-    .rwd-TopBtn svg {
-        width:60px;
-        height: 60px
-    }
-}
 
 */
