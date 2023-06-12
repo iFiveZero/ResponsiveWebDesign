@@ -1,0 +1,81 @@
+:root {
+    --clr-primary-300: #1e90ff;
+    --clr-neutral-900: black;
+}
+
+.super-simple-example {
+    padding-block: 20vh;
+    display: grid;
+    gap: 3rem;
+}
+
+.super-simple-example>.container {
+    container-type: inline-size;
+    margin-inline: auto;
+    width: 100%;
+    padding: 2rem;
+    border: 5px solid hsl(0 0% 95% / 0.2);
+}
+
+.container[data-type="narrow"] {
+    max-width: 350px;
+}
+
+.container[data-type="medium"] {
+    max-width: 600px;
+}
+
+.container[data-type="wide"] {
+    max-width: 850px;
+}
+
+.super-simple-example p {
+    padding: 0.5em;
+    background: var(--clr-primary-300);
+    color: var(--clr-neutral-900)
+}
+
+@container (min-width: 375px) {
+    .super-simple-example p {
+        background: lime;
+    }
+}
+
+@container (min-width: 625px) {
+    .super-simple-example p {
+        background: orangered;
+    }
+}
+
+
+/*
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header {
+    background-color: lightgrey;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+
+main {
+    background-color: lightskyblue;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+aside {
+    background-color: lightcoral;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+footer {
+    background-color: lightgreen;
+    grid-column: 1/3;
+    grid-row: 3;
+}
+*/
