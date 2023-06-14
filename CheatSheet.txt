@@ -1,0 +1,41 @@
+HTML Concepts
+head = metadata <title> <link> <style> <meta> <script>
+body = page area
+symantic HTML 2 types:
+1. Content Tags give content meaning:
+a. Grouping Elements e.g. <h1> <h2> <h3> <p> <a> <img> <li> <figure> <ol> <ul> </br>
+b. Text-Level Semantics  e.g. <<h1> <h2> <h3> <p> <a> <img> <li> <figure> <ol> <ul>> 
+2. Structure or Sectioning Tags <heading> <main> <footer> <article> <section> <nav> <aside>
+non symantic Tags e.g. <div>
+Heading Tags - give a tale of contents
+Attributes class => Styling and id=> in page link
+Data-attributes for javascript
+Forms
+ARIA - accessibility combines with symantics
+
+CSS Concepts
+Inheritance
+Cascade - reading from top down - the lst style wins. Can see in dev tools
+Box Model
+css to add to all files
+*,
+*::before,
+*::after {
+      box-sizing: border-box;
+}
+
+specficity - element, class id - specificity wins.
+give classes meaningful names
+use grid or flexbox to get started don't learn positioning don't use float
+grid is best for beginners
+seperate layout from styling in your classes
+
+Responsive Website Tips
+By default your website is responsive
+It's our CSS that cuases the problem
+start with small screen mobile forst use 320px to start
+start with global styling first
+avoid fixed sizes use max-width or min-height using rems and ems
+media queries to add compexity for bigger screens with min-width e.g block to flex
+use consistent breakpoints
+use modern css without break points e.g clamp()
