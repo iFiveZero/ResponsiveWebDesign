@@ -1,0 +1,29 @@
+
+/* Flex Parent */
+.list-flex {
+    border: red 3px solid;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*gap: 2rem; */
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Flex Children */
+.list-item-flex {
+    border: green 3px solid;
+
+    flex: 1;
+/* Flex Child Properties 
+the spec ecnourages the use of the Flex propoerty so the other items can eb set correctly
+*/
+/*
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 0;
+
+*/
+}
