@@ -1,0 +1,53 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    /* Set Font For rem sizing */
+    font-size: 10px;
+}
+
+.Wrap {
+   /* */
+   max-width: 1400x;
+   margin: 0 auto; 
+}
+
+.Header {
+    width: 100%;
+    min-height: 13rem;
+    background-color: #038c5a;
+}
+
+.WrapMiddle {
+        /*  */
+        width: 100%;
+        font-size: 0;
+        border: solid red 2px;
+}
+.Left {
+    min-height: 62.5rem;
+    width: 20.83%;
+    background-color: #03a66a;
+    display: inline-block;
+
+}
+
+.Middle {
+    min-height: 62.5rem;
+    width: 68.75%;
+    background-color: #bbbf90;
+    display: inline-block;
+
+}
+.Right {
+    min-height: 62.5rem;
+    width: 10.42%;
+    background-color: #03a66a;
+    display: inline-block;
+
+}
+.Footer {
+    min-height: 20rem ;
+    width: 100%;
+    background-color: #025059;
+}
