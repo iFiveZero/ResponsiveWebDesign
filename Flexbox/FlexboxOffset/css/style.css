@@ -1,26 +1,50 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+
+    font-size: 2rem;
+}
+
 .Container {
-    margin: 0;
-    padding: 0;
+    border: solid red 2px !important;
+}
+
+.Item{ 
+    border: solid green 2px !important;
+}
+
+.Last-Item {
+    border: dashed indigo 2px !important;
+}
+
+
+@media (min-width: 40rem) {
+.Container {
+
     min-height: 6rem;
     width: 100%;
     border: solid red 2px !important;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center; 
+
     flex-wrap: wrap;
+    gap: 2em;
 
 }
 
-.CentreMe{
+.Item, .Last-Item {
+    margin: 1rem;
+    text-decoration: none;
+}
 
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-size: 2rem;
-    
-    
-
-
-  
+.Item{ 
+    margin-right: 1rem; 
     border: solid green 2px !important;
+}
 
+.Last-Item {
+    margin-left: auto;
+    border: dashed indigo 2px !important;
+}
 }
