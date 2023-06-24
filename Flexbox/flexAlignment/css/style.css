@@ -1,0 +1,64 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 1rem;
+}
+.Container1 {
+    border: solid red 2px !important;
+    display: flex;
+    /* Main Axis Alignment */
+    justify-content: space-between;
+}
+
+.Item1{ 
+    border: solid green 2px !important;
+}
+
+
+.Container2 {
+    border: solid red 2px !important;
+    min-height: 4rem;
+    display: flex;
+    /* Cross Axis Alignment */
+    align-items: center;
+
+}
+
+.Item2{ 
+    border: solid green 2px !important;
+
+}
+
+.Container3 {
+    border: solid red 2px !important;
+    min-height: 4rem;
+    display: flex;
+
+
+}
+
+.Item3{ 
+    border: solid green 2px !important;
+    /* Cross Axis Alignment */
+    align-self: flex-end;
+
+}
+
+.Container4 {
+    border: solid red 2px !important;
+    min-height: 4rem;
+    display: flex;
+
+    align-content: center;
+    
+}
+
+.Item4{ 
+    border: solid green 2px !important;
+
+}
