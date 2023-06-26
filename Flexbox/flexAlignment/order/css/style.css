@@ -10,18 +10,24 @@ h1 {
 }
 .Container1 {
     border: solid red 2px !important;
+    height: 300px;
     display: flex;
     /* Main Axis Alignment */
     justify-content: space-between;
 }
 
+
 .Item1{ 
+    width: 100px;
+    height: 100px;
+    margin: 5px;
     border: solid green 2px !important;
 }
 
 
 .Container2 {
     border: solid red 2px !important;
+    height: 300px;
     min-height: 4rem;
     display: flex;
     /* Cross Axis Alignment */
@@ -30,12 +36,16 @@ h1 {
 }
 
 .Item2{ 
+    width: 100px;
+    height: 100px;
+    margin: 5px;
     border: solid green 2px !important;
 
 }
 
 .Container3 {
     border: solid red 2px !important;
+    height: 300px;
     min-height: 4rem;
     display: flex;
 
@@ -43,6 +53,9 @@ h1 {
 }
 
 .Item3{ 
+    width: 100px;
+    height: 100px;
+    margin: 5px;
     border: solid green 2px !important;
     /* Cross Axis Alignment */
     align-self: flex-end;
@@ -51,6 +64,7 @@ h1 {
 
 .Container4 {
     border: solid red 2px !important;
+    height: 300px;
     min-height: 4rem;
     display: flex;
 
@@ -59,6 +73,45 @@ h1 {
 }
 
 .Item4{ 
+    width: 100px;
+    height: 100px;
+    margin: 5px;
     border: solid green 2px !important;
 
 }
+
+.Container5 {
+    border: solid red 2px !important;
+    height: 300px;
+    min-height: 4rem;
+    display: flex;
+
+  /*  align-content: center; */
+    
+}
+
+.Item5{ 
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: solid green 2px !important;
+  }
+
+.Item5:nth-child(1) {
+    order: 3;
+  }
+  
+.Item5:nth-child(2) {
+    order: 2;
+  }
+  
+  .Item5:nth-child(3) {
+    order: 1;
+  }
+
+  .Item5:nth-child(4) {
+    order: 5;
+  }
+ .Item5:nth-child(5) {
+    order: 4;
+  }

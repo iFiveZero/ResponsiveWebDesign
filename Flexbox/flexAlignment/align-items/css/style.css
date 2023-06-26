@@ -1,0 +1,99 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 1rem;
+}
+.Container1 {
+    border: solid red 2px !important;
+    height: 300px;
+    display: flex;
+    /* Main Axis Alignment */
+    align-items: flex-start
+}
+
+
+.Item1{ 
+    margin: 5px;
+    border: solid green 2px !important;
+}
+
+
+.Container2 {
+    border: solid red 2px !important;
+    height: 300px;
+    min-height: 4rem;
+    display: flex;
+    /* Cross Axis Alignment */
+    align-items: flex-end;
+
+}
+
+.Item2{ 
+
+    margin: 5px;
+    border: solid green 2px !important;
+
+}
+
+.Container3 {
+    border: solid red 2px !important;
+    height: 300px;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.Item3{ 
+
+    margin: 5px;
+    border: solid green 2px !important;
+
+
+}
+
+.Container4 {
+    border: solid red 2px !important;
+    height: 300px;
+    min-height: 4rem;
+    display: flex;
+    align-items: baseline;
+    
+}
+
+.Item4{ 
+    /* width: 100px;
+    height: 100px; */
+    margin: 5px;
+    border: solid green 2px !important;
+
+}
+
+.Item4:nth-child(4) {
+  font-size: 2.5rem;
+}
+
+.Container5 {
+    border: solid red 2px !important;
+    height: 300px;
+    min-height: 4rem;
+    display: flex;
+    align-items: stretch;
+
+  /*  align-content: center; */
+    
+}
+
+.Item5{ 
+
+    margin: 5px;
+    border: solid green 2px !important;
+  }
+
+  

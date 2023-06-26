@@ -1,0 +1,136 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 1rem;
+}
+.Container1 {
+    border: solid red 2px !important;
+    height: 300px;
+    display: flex;
+    /* Main Axis Alignment */
+    justify-content: flex-start;
+}
+
+
+.Item1{ 
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: solid green 2px !important;
+}
+
+
+.Container2 {
+    border: solid red 2px !important;
+    height: 300px;
+    min-height: 4rem;
+    display: flex;
+    /* Cross Axis Alignment */
+    justify-content: flex-end;
+
+}
+
+.Item2{ 
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: solid green 2px !important;
+
+}
+
+.Container3 {
+    border: solid red 2px !important;
+    height: 300px;
+    min-height: 4rem;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.Item3{ 
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: solid green 2px !important;
+
+
+}
+
+.Container4 {
+    border: solid red 2px !important;
+    height: 300px;
+    min-height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.Item4{ 
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: solid green 2px !important;
+
+}
+
+.Container5 {
+    border: solid red 2px !important;
+    height: 300px;
+    min-height: 4rem;
+    display: flex;
+    justify-content: space-around;
+
+  /*  align-content: center; */
+    
+}
+
+.Item5{ 
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: solid green 2px !important;
+  }
+
+  .Container6 {
+    border: solid red 2px !important;
+    height: 300px;
+    min-height: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+
+  /*  align-content: center; */
+    
+}
+
+.Item6{ 
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: solid green 2px !important;
+  }
+/*
+.Item5:nth-child(1) {
+    order: 3;
+  }
+  
+.Item5:nth-child(2) {
+    order: 2;
+  }
+  
+  .Item5:nth-child(3) {
+    order: 1;
+  }
+
+  .Item5:nth-child(4) {
+    order: 5;
+  }
+ .Item5:nth-child(5) {
+    order: 4;
+  }
+*/
