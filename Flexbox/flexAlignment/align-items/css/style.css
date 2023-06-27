@@ -12,14 +12,22 @@ h1 {
     border: solid red 2px !important;
     height: 300px;
     display: flex;
-    /* Main Axis Alignment */
-    align-items: flex-start
 }
 
 
 .Item1{ 
     margin: 5px;
     border: solid green 2px !important;
+}
+
+.Item1:nth-child(1) {
+
+        align-items: flex-start;
+  }
+
+  .Item1:nth-child(2) {
+
+    align-items: flex-end;
 }
 
 

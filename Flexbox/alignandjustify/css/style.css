@@ -1,0 +1,93 @@
+.container {
+    max-width: 700px;
+    min-height: 700px;
+    border: 2px red solid !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+/*
+Imagine you have a line to place the blocks. justify-content tells you how to arrange the blocks along that line.
+
+justify-content: flex-start;
+
+This option aligns the flex items to the start of the main axis.
+justify-content: flex-end;
+
+This option aligns the flex items to the end of the main axis.
+justify-content: center;
+
+This option centers the flex items along the main axis.
+justify-content: space-between;
+
+This option evenly distributes the flex items along the main axis, with space between them. The first item is at the start and the last item is at the end.
+justify-content: space-around;
+
+This option evenly distributes the flex items along the main axis, with space around them. The space is divided evenly before the first item and after the last item.
+justify-content: space-evenly;
+
+This option evenly distributes the flex items along the main axis, with space both between and around them. The space is divided evenly between and around each item.
+justify-content: stretch;
+
+This option stretches the flex items to fill the entire length of the main axis. If the flex items have a defined width, they will be stretched to fit the container.
+*/
+    align-items:baseline;
+/*
+Now, let's say you have another line that goes across the blocks, perpendicular to the first line. align-items tells you how to position the blocks along that line.
+
+align-items: flex-start;
+
+This option aligns the flex items at the start of the cross axis.
+align-items: flex-end;
+
+This option aligns the flex items at the end of the cross axis.
+align-items: center;
+
+This option centers the flex items along the cross axis.
+align-items: baseline;
+
+This option aligns the flex items such that their baselines are aligned.
+align-items: stretch;
+
+This option stretches the flex items to fill the entire height of the cross axis. If the flex items have a defined height, they will be stretched to fit the container.
+*/
+    align-content: flex-start;
+/*
+Sometimes, you have more than one line to put the blocks on. align-content helps you decide how to distribute the lines along the perpendicular line.
+align-content: flex-start;
+
+This option aligns the flex lines at the start of the cross axis.
+align-content: flex-end;
+
+This option aligns the flex lines at the end of the cross axis.
+align-content: center;
+
+This option centers the flex lines along the cross axis.
+align-content: space-between;
+
+This option evenly distributes the flex lines along the cross axis, with space between them. The first line is at the start and the last line is at the end.
+align-content: space-around;
+
+This option evenly distributes the flex lines along the cross axis, with space around them. The space is divided evenly before the first line and after the last line.
+align-content: space-evenly;
+
+This option evenly distributes the flex lines along the cross axis, with space both between and around them. The space is divided evenly between and around each line.
+align-content: stretch;
+
+This option stretches the flex lines to fill the entire height of the cross axis. If the flex lines have a defined height, they will be stretched to fit the container.
+Here's an example of HTML and CSS code that demonstrates these options:
+
+*/
+
+  }
+  
+  .block {
+    /*width: 250px; 
+    min-height: 200px; */
+    background-color: lightblue;
+    margin: 5px;
+  }
+
+  .block:nth-child(2) > h1 {
+    font-size: 5rem;
+  }
+ 

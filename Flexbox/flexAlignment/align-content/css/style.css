@@ -12,14 +12,18 @@ h1 {
     border: solid red 2px !important;
     height: 300px;
     display: flex;
-    /* Main Axis Alignment */
-    align-content: flex-start
+    flex-wrap: wrap;
+    align-content: flex-start;
+
 }
 
 
 .Item1{ 
+    width: 100px;
+    height: 100px;
     margin: 5px;
     border: solid green 2px !important;
+
 }
 
 
@@ -28,15 +32,17 @@ h1 {
     height: 300px;
     min-height: 4rem;
     display: flex;
-    /* Cross Axis Alignment */
+    flex-wrap: wrap;
     align-content: flex-end;
 
 }
 
 .Item2{ 
-
+    width: 100px;
+    height: 100px;
     margin: 5px;
     border: solid green 2px !important;
+
 
 }
 
@@ -45,13 +51,15 @@ h1 {
     height: 300px;
     min-height: 4rem;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
 
 
 }
 
 .Item3{ 
-
+    width: 100px;
+    height: 100px;
     margin: 5px;
     border: solid green 2px !important;
 
@@ -63,20 +71,17 @@ h1 {
     height: 300px;
     min-height: 4rem;
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    align-content: space-between;
     
 }
 
 .Item4{ 
-    /* width: 100px;
-    height: 100px; */
+    width: 100px;
+    height: 100px;
     margin: 5px;
     border: solid green 2px !important;
 
-}
-
-.Item4:nth-child(4) {
-  font-size: 2.5rem;
 }
 
 .Container5 {
@@ -84,16 +89,33 @@ h1 {
     height: 300px;
     min-height: 4rem;
     display: flex;
-    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: space-around;
+    
+}
+
+.Item5{ 
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: solid green 2px !important;
+  }
+
+  .Container6 {
+    border: solid red 2px !important;
+    height: 300px;
+    min-height: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
 
   /*  align-content: center; */
     
 }
 
-.Item5{ 
-
+.Item6{ 
+    width: 100px;
+    height: 100px;
     margin: 5px;
     border: solid green 2px !important;
   }
-
-  
