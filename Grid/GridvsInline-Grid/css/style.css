@@ -1,0 +1,23 @@
+.container {
+  background-color: lightgray;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.item {
+  background-color: coral;
+  padding: 20px;
+  margin: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: lightgray;
+}
+
+.inline-grid-container {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: lightgray;
+}

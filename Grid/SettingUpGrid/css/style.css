@@ -1,0 +1,58 @@
+.container-format {
+    border: solid red 2px !important;
+    background-color: #e4e4e4;
+}
+
+.item-format {
+    background: coral;
+    font-size: 50px;
+}
+
+.grid-layout {
+    height: 600px;
+    width: 600px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-auto-columns: 200px 200px;
+    grid-auto-rows: 100px 100px;
+    grid-template-areas: 
+    "one two"
+    "three four";
+    align-content: center;
+    justify-content: center;
+}
+
+.item-1 {
+ grid-area: two;
+
+}
+
+.item-2 {
+    grid-area: three;
+}
+
+.item-3 {
+    grid-area: four;
+}
+
+.item-4 {
+    grid-area: one;
+}
+
+.container-format > * {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    
+}
+
+/*
+    
+    
+    
+    
+*/
