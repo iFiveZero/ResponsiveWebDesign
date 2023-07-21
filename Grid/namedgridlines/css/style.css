@@ -27,8 +27,8 @@
 }
 
 .grid-item-1 {
-    grid-column: col2-start;
-    grid-row: row2-start / row3-end;
+    grid-column: col2-start / col3-start;
+    grid-row: row1-start / row3-end;
 }
 
 .grid-item-2 {
@@ -37,7 +37,7 @@
 }
 
 .grid-item-9 {
-    grid-column: col1-start / col3-end;
+    grid-column: col1-start / col2-start;
     grid-row: row1-start;
 }
 /*
