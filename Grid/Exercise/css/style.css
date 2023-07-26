@@ -5,7 +5,7 @@
     background-color: #ddd;
 }
 
-.inner-subgrid-layout {
+.item-format {
     border: dashed green 1px !important;
     background: salmon;
 
@@ -15,20 +15,11 @@
 
 .container-grid-layout {
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(4, minmax(100px, auto));
+    gap: 0 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
 }
 
-.inner-subgrid-layout {
-    display: grid;
-    grid-column: 2 / 7;
-    grid-row: 2/4;
-    grid-template-columns: subgrid;
-    grid-template-rows: subgrid;
-}
-
-/*
 .grid-top {
     grid-column: span 2;
 }
@@ -43,6 +34,7 @@
 }
 
 
+/*
 .fill-example-container {
     display: grid;
     gap: 10px;

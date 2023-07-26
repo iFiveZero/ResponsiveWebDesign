@@ -10,16 +10,30 @@
     </head>
     <body>
         <h1>SubGrid Example</h1>
-        <div class="container-format container-grid-layout">
-            <div class="item-format grid-item-1 grid-top">1</div>
-            <div class="item-format grid-item-2 grid-top">2</div>
-            <div class="item-format grid-item-3 grid-top">3</div>
-            <div class="item-format grid-item-4 sub_grid-example">4</div>
-            <div class="item-format grid-item-5 sub_grid-example">5</div>
-            <div class="item-format grid-item-6 grid-bottom">6</div>
-            <div class="item-format grid-item-7 grid-bottom">7</div>
-            <div class="item-format grid-item-8 grid-bottom">8</div>
+        <div class="container-format container-grid-layout"><h1>Outer</h1>
+            <div class="inner-subgrid-layout">
+                <div><h2>Inner 1</h2></div>
+                <div><h2>Inner 1</h2></div>
+            </div>
         </div>
         <script src="app.js" async defer></script>
     </body>
 </html>
+
+
+<!--
+
+                <div class="item-format grid-item-1">1</div>
+                <div class="item-format grid-item-2">2</div>
+                <div class="item-format grid-item-3">3</div>
+            </div>
+            <div class="item-format grid-item-4">4</div>
+            <div class="item-format grid-item-5">5</div>
+            <div class="subgrid-layout">
+                <div class="item-format grid-item-6">6</div>
+                <div class="item-format grid-item-7">7</div>
+                <div class="item-format grid-item-8">8</div>
+
+
+
+-->
