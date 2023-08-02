@@ -1,0 +1,15 @@
+input {
+    caret-color: #f90;
+}
+
+input[name="film"]::placeholder {
+    background-color: #333;
+  }
+
+  input[name="why"] {
+    display: inline;
+    text-align: left;
+    width: 100%;
+    max-width: 250px;
+    min-height: 50px;
+  }

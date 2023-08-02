@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Oscar Form Example</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/masterstyle.css">
+    </head>
+    <body>
+        <h1>Oscar Redemption - CSS Form Example</h1>
+        <h2>Here's your chance to set the record straight: tell us what year the wrong film got nominated, and which film should have received a nod...</h2>
+        <fieldset>
+            <legend>About the offending film (part 1 if 3)</legend>
+            <div>
+                <label for="film">The film in question?</label>
+                <input
+                    id="film"
+                    name="film"
+                    type="text"
+                    placeholder="e.g. King Kong"
+                    required
+                    aria-required="true"
+                >
+            </div>
+            <div>
+                <label for="year">Year of Crime?</label>
+                <input
+                    id="year"
+                    name="year"
+                    type="date"
+                    required
+                    aria-required="true"
+                >
+            </div>
+            <div>
+                <label for="awardWon">Award Won</label>
+                <input
+                    id="awardWon"
+                    name="awardWon"
+                    type="text"
+                    list="awards"
+                    placeholder="Select..."
+                >
+                <datalist id="awards">
+                    <select>
+                        <option value="Best Picture"></option>
+                        <option value="Best Director"></option>
+                        <option value="Best Adapted Screenplay"></option>
+                        <option value="Best Original Screenplay"></option>
+                    </select>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label for="year">Tell us why this is wrong?</label>
+                <input
+                    id="why"
+                    name="why"
+                    type="text"
+                    placeholder="e.g. King Kong"
+                    required
+                    aria-required="true"
+                >
+            </div>
+            <div>
+                <label for="year">How you rate it (1 is woeful 10 is awesomesauce)?</label>
+                <input
+                    id="rating"
+                    name="rating"
+                    type="range"
+                    min="1"
+                    max="10"
+                    value="5"
+                    onchange="showValue(this.value)"
+                >
+                <span id="range">5</span>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>What should have won? (part 2 if 3)</legend>
+            <div>
+                <label for="film">The film in question?</label>
+                <input
+                    id="film"
+                    name="film"
+                    type="text"
+                    placeholder="e.g. King Kong"
+                    required
+                    aria-required="true"
+                >
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>About you? (part 3 if 3)</legend>
+            <div>
+                <label for="film">The film in question?</label>
+                <input
+                    id="film"
+                    name="film"
+                    type="text"
+                    placeholder="e.g. King Kong"
+                    required
+                    aria-required="true"
+                >
+            </div>
+        </fieldset>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
+
